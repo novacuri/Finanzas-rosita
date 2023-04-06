@@ -1,0 +1,95 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Crimson Text", serif;
+	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", sans-serif;
+}
+
+/* SECCION 1 */
+
+.todo {
+	display: grid;
+	background: linear-gradient(#924a8b 28%, #af4c83 100%);
+}
+
+.promo {
+	display: flex;
+	flex-direction: column;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+	margin-top: 3rem;
+	padding-bottom: 10rem;
+}
+
+.promo-titulo {
+	font-size: 2rem;
+	font-weight: bolder;
+	color: white;
+	padding-top: 3rem;
+	padding-left: 15rem;
+}
+.promo-contenido {
+	font-size: 1rem;
+	font-weight: lighter;
+	color: white;
+	padding-left: 15rem;
+}
+
+/* SECCION 2 TARJETAS CON PRODUCTOS*/
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	/* grid-template-rows: 100px 1fr; */
+	/* grid-template-columns: repeat(4, 1fr) /* 300px 300px 1fr 1fr */
+	grid-gap: 5px;
+	place-items: center;
+	padding: 10px;
+}
+.tarjeta {
+	/* display: grid; */
+	border-radius: 10px;
+	/* grid-template-columns: repeat(4, 1fr); */
+	/* padding: 1rem; */
+	transition: all 1s ease-in-out;
+}
+
+.tarjeta:hover {
+	transform: scale(1.1);
+	box-shadow: 13px 15px 37px black;
+	overflow: hidden;
+}
+
+/* QUIENES SON NUESTROS PROVEEDORES Y CLIENTES */
+
+.proveedores {
+	display: flex;
+	flex-direction: column;
+	background: white;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+	margin-top: 0rem;
+	padding-bottom: 10rem;
+}
+
+.proveedores-titulo {
+	font-size: 2rem;
+	font-weight: bolder;
+	color: #924a8b;
+	padding-top: 2rem;
+	padding-left: 30rem;
+}
+.proveedores-contenido {
+	font-size: 1rem;
+	font-weight: lighter;
+	color: black;
+	padding-left: 20rem;
+}
+
