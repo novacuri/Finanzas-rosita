@@ -114,8 +114,60 @@ body {
 	place-content: center;
 	
 }
-
+@media (min-width: 768px) {
+	.aco {
+	display: grid;
+	margin-left: 550px;
+	}
+}
 
 /* FOOOTER */
 
+/* REDES */
+.footer1-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	/* grid-template-rows: 100px 1fr; */
+	/* grid-template-columns: repeat(4, 1fr) /* 300px 300px 1fr 1fr */
+	grid-gap: 1px;
+	place-items: center;
+	padding: 1px;
+	justify-self: auto;
+	background-color: rgb(173, 168, 168);
+	padding-top: 2rem;
 
+}
+
+/* LINKS */
+
+.footer2-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+	/* grid-template-rows: 100px 1fr; */
+	/* grid-template-columns: repeat(4, 1fr) /* 300px 300px 1fr 1fr */
+	/* grid-gap: 0,5px; */
+	place-items: center;
+	padding: 1px;
+	/* justify-self: auto; */
+	background-color: rgb(173, 168, 168);
+	font-size: 1rem;
+	font-weight: lighter;
+	color: black;
+	padding-top: 2rem;
+
+}
+
+/* DISCLAIMER */
+.footer3-container {
+	display: flex;
+	place-items: center;
+	padding: 1px;
+	justify-self: auto;
+	background-color: rgb(173, 168, 168);
+	font-size: 1,5rem;
+	font-weight: lighter;
+	color: black;
+	padding-top: 2rem;
+	justify-content: center;
+
+}
