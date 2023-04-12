@@ -16,6 +16,14 @@
 			integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
 			crossorigin="anonymous"
 		/>
+		<!-- SCRIPT DE BOOTSTRAP -->
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+			crossorigin="anonymous"
+		></script>
+
 		<link rel="stylesheet" href="css/style.css" />
 		<meta
 			name="descripcion"
@@ -139,186 +147,231 @@
 					<img src="./img/08in.JPG" class="tarjeta" alt="imagen tarjeta" />
 				</div>
 			</div>
+
+			<!-- 03 SECCION 3 QUIENES SON NUESTROS PROVEEDORES Y CLIENTES -->
+
+			<div class="proveedores">
+				<p class="proveedores-titulo">
+					We compare products from leading providers
+				</p>
+				<p class="proveedores-contenido">
+					You'll only find results from genuine companies. Our data experts
+					check each company before we add them to our comparisons.
+				</p>
+				<!--   <Img src="img/01cc.JPG" class="01prueba" ></Img> -->
+			</div>
+
+			<!-- 04 SECCION 4 ACORDEON -->
+			<div class="aco">
+				<p class="promo-titulo">Make the most of your tax free ISA allowance</p>
+				<p class="promo-titulo"></p>
+				<!-- JP: PORQUE ESTO ESTÁ VACÍO??? -->
+
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseOne"
+								aria-expanded="true"
+								aria-controls="collapseOne"
+							>
+								Seguros
+							</button>
+						</h2>
+						<div
+							id="collapseOne"
+							class="accordion-collapse collapse show"
+							data-bs-parent="#accordionExample"
+						>
+							<div class="accordion-body">
+								<strong>Los mejores seguros.</strong> No te los pierdas.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseTwo"
+								aria-expanded="false"
+								aria-controls="collapseTwo"
+							>
+								Inversiones
+							</button>
+						</h2>
+						<div
+							id="collapseTwo"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionExample"
+						>
+							<div class="accordion-body">
+								<strong>Unicas</strong> No te las pierdas.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseThree"
+								aria-expanded="false"
+								aria-controls="collapseThree"
+							>
+								Bonos
+							</button>
+						</h2>
+						<div
+							id="collapseThree"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionExample"
+						>
+							<div class="accordion-body">
+								<strong>Shares</strong>
+								<!-- It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+							-->
+								Increibles
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--05 SECCION 5 TRES TARJETAS CON DIBUJITOS -->
+			<div class="proveedores">
+				<!-- JP: ESTA CLASE QUE REUTILIZÁS DE LA SECCIÓN 3 TIENE UN PADDING BOTTOM DE 10REM Y ES UNA CAGADA ACÁ -->
+				<p class="proveedores-titulo">We help find the best deals for you</p>
+			</div>
+
+			<div class="card-group">
+				<div class="card">
+					<!-- JP: HIJODEPUTA CREASTE ESTA CLASE "card" Y NO EXISTÍA EN EL CSS -->
+					<img src="./img/14.JPG" class="card-img-top" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title">Inversiones</h5>
+						<p class="card-text">Estas son insuperables.</p>
+						<!-- JP: HIJODEPUTA CREASTE ESTA CLASE "card-text" Y NO EXISTÍA EN EL CSS -->
+						<!-- <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p> -->
+						<button class="boton-amarillo">Ver mas</button>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./img/15.JPG" class="card-img-top" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title">Mas inversiones</h5>
+						<p class="card-text">Las mejores de todas.</p>
+						<!-- <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p> -->
+						<button class="boton-amarillo">Ver mas</button>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./img/16.JPG" class="card-img-top" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title">Otras inversiones</h5>
+						<p class="card-text">Grosisimasssssssssssssssssss.</p>
+						<!-- <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p> -->
+						<button class="boton-amarillo">Ver mas</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- 06 SECCION 6 TARJETAS FAMILIA FELIZ -->
+			<div class="proveedores">
+				<p class="proveedores-titulo">Most popular guides</p>
+			</div>
+
+			<div class="card-group2">
+				<div class="card">
+					<img src="./img/17.JPG" class="card-img-top2" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title2">Your refund rights explained</h5>
+						<p class="card-text">If you have been refused.</p>
+						<p class="card-text"><small class="text-muted">Ver mas</small></p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./img/18.JPG" class="card-img-top2" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title2">
+							What's the best way to cash-in spare change?
+						</h5>
+						<p class="card-text">Las mejores de todas.</p>
+						<p class="card-text"><small class="text-muted">Ver mas</small></p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="./img/19.JPG" class="card-img-top2" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title2">
+							How do I gift money without being taxed?
+						</h5>
+						<p class="card-text">Grosisimasssssssssssssssssss.</p>
+						<p class="card-text"><small class="text-muted">Ver mas</small></p>
+					</div>
+				</div>
+			</div>
+
+			<!-- 07 SECCION 7 NOVEDADES & FEATURES -->
+			<div class="proveedores">
+				<p class="proveedores-titulo">News & Features</p>
+				<div class="card-group2">
+					<div class="card">
+						<img src="./img/30.JPG" class="card-img-top2" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title2">
+								Universal credit: Are you missing out on payments of up to
+								£7,300 a year?
+							</h5>
+							<p class="card-text">
+								More than 1.3 million people could be missing out on Universal
+								Credit payments of up to £7,300 a year, according to data from
+								​​the New Economics Foundation. The number of Brits eligible for
+								the benefit has skyrocketed thanks to a rule change in the
+								Autumn Budget. .
+							</p>
+							<p class="card-text"><small class="text-muted">Ver mas</small></p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="./img/30.JPG" class="card-img-top2" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title2">
+								How does working from home affect your mortgage?
+							</h5>
+							<p class="card-text">
+								The latest data from the Office for National Statistics (ONS)
+								has revealed that homeworking has more than doubled in the UK
+								since 2019.*
+							</p>
+							<p class="card-text"><small class="text-muted">Ver mas</small></p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="./img/30.JPG" class="card-img-top2" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title2">
+								Amazon Prime Day tips from personal finance experts
+							</h5>
+							<p class="card-text">
+								Prime Day was launched to create a sales event and get people
+								spending in the otherwise quieter summer months. It has plenty
+								of bargains on offer, but some traps too.
+							</p>
+							<p class="card-text"><small class="text-muted">Ver mas</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<!-- 03 SECCION 3 QUIENES SON NUESTROS PROVEEDORES Y CLIENTES -->
-
-		<div class="proveedores">
-			<p class="proveedores-titulo">
-				We compare products from leading providers
-			</p>
-			<p class="proveedores-contenido">
-				You'll only find results from genuine companies. Our data experts check
-				each company before we add them to our comparisons.
-			</p>
-			<!--   <Img src="img/01cc.JPG" class="01prueba" ></Img> -->
-		</div>
-
-<!-- 04 SECCION 4 ACORDEON -->
-<div class="aco">
-	<p class="promo-titulo">Make the most of your tax free ISA allowance</p>
-	<p class="promo-titulo"></p>
-
-<div class="accordion" id="accordionExample">
-	<div class="accordion-item">
-	  <h2 class="accordion-header">
-		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-		  Seguros
-		</button>
-	  </h2>
-	  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-		<div class="accordion-body">
-		  <strong>Los mejores seguros.</strong>  No te los pierdas.
-		</div>
-	  </div>
-	</div>
-	<div class="accordion-item">
-	  <h2 class="accordion-header">
-		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-		  Inversiones
-		</button>
-	  </h2>
-	  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-		<div class="accordion-body">
-		  <strong>Unicas</strong> No te las pierdas.
-		</div>
-	  </div>
-	</div>
-	<div class="accordion-item">
-	  <h2 class="accordion-header">
-		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-		  Bonos
-		</button>
-	  </h2>
-	  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-		<div class="accordion-body">
-		  <strong>Shares</strong> <!-- It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-		 --> Increibles
-		</div>
-	  </div>
-	</div>
-  </div>
-  <!-- <img src="./img/13.JPG" alt=""> -->
-</div>
-
-<!--05 SECCION 5 TRES TARJETAS CON DIBUJITOS -->
-<div class="proveedores">
-<p class="proveedores-titulo">We help find the best deals for you</p>
-<div></div>
-
-<div class="card-group">
-	<div class="card">
-	  <img src="./img/14.JPG" class="card-img-top" alt="...">
-	  <div class="card-body">
-		<h5 class="card-title">Inversiones</h5>
-		<p class="card-text">Estas son insuperables.</p>
-		<!-- <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p> -->
-	<button class="boton-amarillo">Ver mas</button>  
-	</div>
-	</div>
-	<div class="card">
-	  <img src="./img/15.JPG" class="card-img-top" alt="...">
-	  <div class="card-body">
-		<h5 class="card-title">Mas inversiones</h5>
-		<p class="card-text">Las mejores de todas.</p>
-		<!-- <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p> -->
-		<button class="boton-amarillo">Ver mas</button> 
-	  </div>
-	</div>
-	<div class="card">
-	  <img src="./img/16.JPG" class="card-img-top" alt="...">
-	  <div class="card-body">
-		<h5 class="card-title">Otras inversiones</h5>
-		<p class="card-text">Grosisimasssssssssssssssssss.</p>
-		<!-- <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p> -->
-		<button class="boton-amarillo">Ver mas</button> 
-	  </div>
-	</div>
-  </div>
-
-<!-- 06 SECCION 6 TARJETAS FAMILIA FELIZ -->
-<div class="proveedores">
-	<p class="proveedores-titulo">Most popular guides</p>
-	<div></div>
-	
-	<div class="card-group2">
-		<div class="card">
-		  <img src="./img/17.JPG" class="card-img-top2" alt="...">
-		  <div class="card-body">
-			<h5 class="card-title2">Your refund rights explained</h5>
-			<p class="card-text">If you have been refused .</p>
-			<p class="card-text"><small class="text-muted">Ver mas</small></p>
-		
-		</div>
-		</div>
-		<div class="card">
-		  <img src="./img/18.JPG" class="card-img-top2" alt="...">
-		  <div class="card-body">
-			<h5 class="card-title2">What's the best way to cash-in spare change?</h5>
-			<p class="card-text">Las mejores de todas.</p>
-			<p class="card-text"><small class="text-muted">Ver mas</small></p>
-			
-		  </div>
-		</div>
-		<div class="card">
-		  <img src="./img/19.JPG" class="card-img-top2" alt="...">
-		  <div class="card-body">
-			<h5 class="card-title2">How do I gift money without being taxed?</h5>
-			<p class="card-text">Grosisimasssssssssssssssssss.</p>
-			<p class="card-text"><small class="text-muted">Ver mas</small></p>
-			
-		  </div>
-		</div>
-	  </div>
-
-<!-- 07 SECCION 7 NOVEDADES & FEATURES -->
-<div class="proveedores">
-	<p class="proveedores-titulo">News & Features</p>
-	<div></div>
-	
-	<div class="card-group2">
-		<div class="card">
-		  <img src="./img/30.JPG" class="card-img-top2" alt="...">
-		  <div class="card-body">
-			<h5 class="card-title2">Universal credit: Are you missing out on payments of up to £7,300 a year?</h5>
-			<p class="card-text">More than 1.3 million people could be missing out on Universal Credit payments of up to £7,300 a year, according to data from ​​the New Economics Foundation. The number of Brits eligible for the benefit has skyrocketed thanks to a rule change in the Autumn Budget. .</p>
-			<p class="card-text"><small class="text-muted">Ver mas</small></p>
-		
-		</div>
-		</div>
-		<div class="card">
-		  <img src="./img/30.JPG" class="card-img-top2" alt="...">
-		  <div class="card-body">
-			<h5 class="card-title2">How does working from home affect your mortgage?</h5>
-			<p class="card-text">The latest data from the Office for National Statistics (ONS) has revealed that homeworking has more than doubled in the UK since 2019.*</p>
-			<p class="card-text"><small class="text-muted">Ver mas</small></p>
-			
-		  </div>
-		</div>
-		<div class="card">
-		  <img src="./img/30.JPG" class="card-img-top2" alt="...">
-		  <div class="card-body">
-			<h5 class="card-title2">Amazon Prime Day tips from personal finance experts</h5>
-			<p class="card-text">Prime Day was launched to create a sales event and get people spending in the otherwise quieter summer months. It has plenty of bargains on offer, but some traps too.</p>
-			<p class="card-text"><small class="text-muted">Ver mas</small></p>
-			
-		  </div>
-		</div>
-	  </div>
-
-
-
-
-<!-- SCRIPT DE BOOTSTRAP -->
-<script
-				src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-				integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-				crossorigin="anonymous"
-			></script>
-
-
-<!-- FOOOOTER -->
-<!-- AA REDES -->
+		<!-- FOOOOTER -->
+		<!-- AA REDES -->
 		<footer>
 			<div class="footer1-container">
 				<div>
@@ -333,24 +386,22 @@
 				<div>
 					<img src="./img/23.JPG" class="tarjeta" alt="imagen tarjeta" />
 				</div>
-				
-				</div>
 			</div>
-		</div>
-
-<!--AB LINKS	 -->
-<div class="footer2-container">
-<p>About |</p>
-<p>Guides |</p>
-<p>Jobs |</p>
-<p>Contact us| </p>
-<p>Press |</p>
-<p>Sitemap |</p>
-</div>
+			<!--AB LINKS	 -->
+			<div class="footer2-container">
+				<p>About |</p>
+				<p>Guides |</p>
+				<p>Jobs |</p>
+				<p>Contact us|</p>
+				<p>Press |</p>
+				<p>Sitemap |</p>
+			</div>
+			<!--AC DISCLAIMER -->
+			<p class="footer3-container">
+				Our website is completely free for you to use but we may receive a
+				commission from some of the companies we link to on the site. How
+				money.co.uk works.
+			</p>
 		</footer>
 	</body>
 </html>
-
-<!--AC DISCLAIMER -->
-<P class="footer3-container">Our website is completely free for you to use but we may receive a commission from some of the companies we link to on the site. How money.co.uk works.</P>
-

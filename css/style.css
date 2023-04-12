@@ -25,9 +25,8 @@ body {
 	background-position: center center;
 	overflow: hidden;
 	margin-top: 3rem;
-		/* padding-bottom: 10rem; */
+	/* padding-bottom: 10rem; */
 	align-items: center;
-
 }
 
 .promo-titulo {
@@ -98,7 +97,7 @@ body {
 }
 
 /*04 SECCION 4 ACORDEON */
-.aco{
+.aco {
 	display: grid;
 	/* grid-template-columns: repeat(auto-fit, minmax(1px, 1fr)); */
 	grid-template-rows: 100px 100px;
@@ -112,90 +111,106 @@ body {
 	align-content: center;
 	align-items: center;
 	place-content: center;
-	
 }
 @media (min-width: 768px) {
 	.aco {
-	display: grid;
+		display: grid;
+		/*margin-left: 550px; /*JP:¿Por qué en nombre de Dios le pusiste este margen?*/
 	margin-left: 550px;
 	}
 }
 
 /*05 SECCION 5 TRES TARJETAS CON DIBUJITOS */
 
-.card-group{
+.card-group {
 	display: flex;
-	size: 2rem;
-	height: 2rem/* 20vh */;
-	padding-bottom: 35rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* size: 2rem; */
+	/*height: 2rem /* 20vh */
+	padding-bottom: 5rem;
+	text-align: center;
 }
 
+.card {
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 350px;
+	border-radius: 1rem;
+}
 
-.card-img-top{
+.card-img-top {
 	/* size: 10px;
 	size-adjust: 1px; */
-	display: flex;
 	height: 30vh;
 	width: 30vh;
 	/* align-items: flex-start; */
-/* 	align-content: flex-start; */
+	/* 	align-content: flex-start; */
 }
 
-.card-title{
-	display: flex;
+.card-title {
 	color: #924a8b;
 	font-size: 2rem;
 	/* font-weight: bold; */
 	text-align: center;
 }
 
-.boton-amarillo{
-	display: flex;
+.card-text {
+	font-weight: bold;
+	/* text-align: center; */ /* JP: ESTO LO PONÉS ACÁ O EN LA CLASE .card-group */
+}
+
+.boton-amarillo {
 	background-color: #fec340;
 	border: none;
 	size: 200px;
 	height: 5vh;
 	width: 20vh;
 	border-radius: 30%;
+	text-align: center;
 }
 
 /* 06 SECCION 6 TARJETAS FAMILIA FELIZ */
 
-
-.card-group2{
+.card-group2 {
 	display: flex;
-	size: 3rem;
-	height: 3rem/* 20vh */;
-	padding-bottom: 35rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* size: 3rem; */
+	/* height: 3rem */ /* 20vh */
+	padding-bottom: 5rem;
+	text-align: center;
 }
 
-
-.card-img-top2{
+.card-img-top2 {
 	/* size: 10px;
 	size-adjust: 1px; */
-	display: flex;
-	height: 40vh;
-	width: 40vh;
+	height: 20vh;
+	width: 20vh;
 	/* align-items: flex-start; */
-/* 	align-content: flex-start; */
+	/* 	align-content: flex-start; */
 }
 
-.card-title2{
+.card-body {
 	display: flex;
-	color: #29335C;
+	flex-direction: column;
+	align-items: center;
+	max-width: 50%;
+}
+
+.card-title2 {
+	color: #29335c;
 	font-size: 2rem;
 	/* font-weight: bold; */
-	text-align: left;
+	text-align: center;
 }
-
 
 /* 07 SECCION 7 NOVEDADES & FEATURES */
 
 /* Como las tarjetas de esta seccion son identicas a la seccion anterior, no es necesario crear clases nuevas ni modificar nada
  */
 
-
- 
 /* FOOOTER */
 
 /*AA REDES */
@@ -204,13 +219,12 @@ body {
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	/* grid-template-rows: 100px 1fr; */
 	/* grid-template-columns: repeat(4, 1fr) /* 300px 300px 1fr 1fr */
-	grid-gap: 1px;
+	grid-gap: 4px;
 	place-items: center;
 	padding: 1px;
 	justify-self: auto;
 	background-color: rgb(173, 168, 168);
 	padding-top: 2rem;
-
 }
 
 /*AB LINKS */
@@ -229,7 +243,6 @@ body {
 	font-weight: lighter;
 	color: black;
 	padding-top: 2rem;
-
 }
 
 /*AC DISCLAIMER */
@@ -239,10 +252,9 @@ body {
 	padding: 1px;
 	justify-self: auto;
 	background-color: rgb(173, 168, 168);
-	font-size: 1,5rem;
+	font-size: 1, 5rem;
 	font-weight: lighter;
 	color: black;
 	padding-top: 2rem;
 	justify-content: center;
-
 }
