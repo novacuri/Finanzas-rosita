@@ -263,3 +263,50 @@ body {
 /* -------------------------------------------------------------- */
 /* DESDE ACA HOJA APIS */
 
+/* HOJA APIS SECCION 01 TABLA */
+
+
+/* HOJA APIS SECCION 02 COTIZACIONES EN VIVO */
+
+.contcotiza{
+	display: flex;
+	flex-direction: row;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+	margin-top: 3rem;
+	align-items: right;
+	justify-content: center;
+	transition: all 1s ease-in-out;
+	}
+
+	.contcotiza:hover {
+		transform: scale(1.1);
+		box-shadow: 13px 15px 37px black;
+		overflow: hidden;
+	}
+
+
+.activo{
+	color: #924a8b;
+	font-size: 2rem;
+	padding-right: 2rem;
+}	
+
+.cotiza{
+	color: black;
+	font-size: 2rem;
+	padding-right: 2rem;
+}
+
+.porcentaje{
+	color: #924a8b;
+	font-size: 2rem;
+	padding-right: 2rem;
+}
+
+.operar{
+	color: #2e10da;
+	font-size: 2rem;
+	padding-right: 2rem;
+}
