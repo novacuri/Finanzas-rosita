@@ -224,12 +224,13 @@ body {
 .footer1-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-		grid-gap: 4px;
+	grid-gap: 4px;
 	place-items: center;
 	padding: 1px;
 	justify-self: auto;
 	background-color: rgb(173, 168, 168);
 	padding-top: 2rem;
+	margin-top: 2rem;
 }
 
 /*AB LINKS */
@@ -265,6 +266,14 @@ body {
 
 /* HOJA APIS SECCION 01 TABLA */
 
+.table{
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+}
+
+.col{
+	color: #af4c83;
+}
 
 /* HOJA APIS SECCION 02 COTIZACIONES EN VIVO */
 
@@ -274,10 +283,13 @@ body {
 	background-size: cover;
 	background-position: center center;
 	overflow: hidden;
-	margin-top: 3rem;
-	align-items: right;
+	margin-top: 1%;
+	align-items: center;
 	justify-content: center;
+	box-shadow: 3px 1px 25px black;
 	transition: all 1s ease-in-out;
+	width: 50vh;
+	border-radius:5%;
 	}
 
 	.contcotiza:hover {
@@ -286,27 +298,33 @@ body {
 		overflow: hidden;
 	}
 
+	@media (min-width: 768px) {
+		.contcotiza {
+		display: flex;
+		margin-left: 550px;
+	}
+	}	
 
 .activo{
 	color: #924a8b;
-	font-size: 2rem;
+	font-size: 1,5rem;
 	padding-right: 2rem;
 }	
 
 .cotiza{
 	color: black;
-	font-size: 2rem;
+	font-size: 1,5rem;
 	padding-right: 2rem;
 }
 
 .porcentaje{
 	color: #924a8b;
-	font-size: 2rem;
+	font-size: 1,5rem;
 	padding-right: 2rem;
 }
 
 .operar{
 	color: #2e10da;
-	font-size: 2rem;
+	font-size: 1,5rem;
 	padding-right: 2rem;
 }
