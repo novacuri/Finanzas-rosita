@@ -54,7 +54,7 @@ const products = [
 //Templates generales para armar la estructura HTML con JavaScript
 const populateProductTemplate = (product) => {
 	return `<div class="product">
-                <img class="product-image" src="${product.imageUrl}" alt="">
+                <img class="product-image" width=300px src="${product.imageUrl}" alt="">
                 <h2 class="product-name">${product.name}</h2>
                 <p class="product-description">${product.description}</p>
                 <span class="product-price">${product.price}</span>
@@ -64,8 +64,43 @@ const populateProductTemplate = (product) => {
 const loadProducts = () => {
 	productTemplate.innerHTML = "";
 	products.forEach(
-		(product) =>
-			(productTemplate.innerHTML += populateProductTemplate(product))
+		(product) => (productTemplate.innerHTML += populateProductTemplate(product))
 	);
+	console.log("Variable productTemplate interna es:", productTemplate);
+	return productTemplate;
 };
 loadProducts();
+console.log("Variable productTemplate es:", productTemplate);
+
+//Genero una página nueva
+
+function generateNewWindow() {
+	let newWindow = window.open("");
+	newWindow.document.open();
+
+	/* const newElem = Object.assign(document.createElement(`div`), {
+		id: `myBrandnewDiv2`,
+		innerHTML: `div#myBrandnewDiv2 signing in. 
+			I was <i>assigned</i> using <code>Object.assign</code>&hellip;`,
+	});
+	document.body.appendChild(newElem); */
+
+	let dynamicContent = productTemplate.outerHTML;
+
+	console.log("Variable dynamicContent es:", dynamicContent);
+	console.log(typeof dynamicContent);
+
+	let newPageHTMLStart =
+		"<!DOCTYPE html><html lang='es'><head><meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Prueba Nueva Página</title></head><body>";
+
+	let newPageHTMLEnd = "</body></html>";
+
+	let newPageHTML = newPageHTMLStart + dynamicContent + newPageHTMLEnd;
+
+	console.log("Variable newPageHTML es:", newPageHTML);
+
+	newWindow.document.write(newPageHTML);
+
+	newWindow.document.close();
+}
+generateNewWindow();
