@@ -329,3 +329,8 @@ body {
 	padding-right: 2rem;
 	text-align: right;
 }
+
+/* Estilos agregados JPPE parte PRUEBA DE TEMPLATE */
+.product-image{
+	width: 300px;
+}
