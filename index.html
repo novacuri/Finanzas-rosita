@@ -100,7 +100,36 @@
 			</nav>
 		</header>
 
-		<a href="https://www.apple.com">Soy la pagina de Apple</a>
+
+<!-- SECCION 1.1 INSERTAMOS LA API DE COTIZACIONES -->
+
+<ul id="quotes-list"></ul>
+    
+<script>
+  const apiKey = 'YOUR_API_KEY';
+  const symbols = ['AAPL', 'GOOGL', 'MSFT', 'SPY'];
+  
+  const quotesList = document.getElementById('quotes-list');
+  
+  symbols.forEach(symbol => {
+	const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${apiKey}`;
+	
+	fetch(url)
+	  .then(response => response.json())
+	  .then(data => {
+		const quote = data['Global Quote'];
+		const price = quote['05. price'];
+		
+		const listItem = document.createElement('li');
+		const text = document.createTextNode(`${symbol} price: ${price}`);
+		listItem.appendChild(text);
+		quotesList.appendChild(listItem);
+	  })
+	  .catch(error => {
+		console.log(`Error fetching ${symbol} price: ${error}`);
+	  });
+  });
+</script>
 
 
 		<!-- 01 SECCION 1 PROMO DE LA PAGINA-->
@@ -113,6 +142,10 @@
 				</p>
 				
 			</div>
+
+
+
+
 
 			<!-- 02 SECCION 2 TARJETAS CON PRODUCTOS -->
 

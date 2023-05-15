@@ -10,6 +10,18 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+/* SECCION 1.1 INSERTAMOS LA API DE COTIZACIONES */
+
+#quotes-list{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border: #924a8b;
+	color: #924a8b;
+	border-style: solid;
+}
+
+
 /* 01 SECCION 1 PROMO DE LA PAGINA*/
 
 .todo {
