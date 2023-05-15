@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AAPL Stock Price Chart</title>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+	<div id="chart"></div>
+	<button onclick="invest()">INVEST IN APPLE NOW</button>
+	
+	<script>
+		// Fetch the AAPL stock data using yfinance
+		fetch('https://query1.finance.yahoo.com/v8/finance/chart/AAPL')
+			.then(response => response.json())
+			.then(data => {
+				const prices = data.chart.result[0].indicators.quote[0].close;
+				const dates = data.chart.result[0].timestamp.map(timestamp => new Date(timestamp * 1000));
+				
+				// Create the price chart using plotly.js
+				const chart = document.getElementById('chart');
+				Plotly.newPlot(chart, [{
+					x: dates,
+					y: prices,
+					type: 'scatter',
+					mode: 'lines',
+					line: { color: 'blue' }
+				}], {
+					title: 'AAPL Stock Price Chart',
+					xaxis: { title: 'Date' },
+					yaxis: { title: 'Price (USD)' }
+				});
+			})
+			.catch(error => console.error(error));
+		
+		// Function to redirect to the eToro website when the button is clicked
+		function invest() {
+			window.location.href = 'https://www.etoro.com/markets/aapl';
+		}
+	</script>
+</body>
+</html>

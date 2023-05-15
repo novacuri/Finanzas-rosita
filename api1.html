@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>AAPL Stock Price Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <style>
+      #button {
+        display: block;
+        margin: auto;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background-color: blue;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart"></div>
+    <button id="button" onclick="invest()">INVEST NOW</button>
+    <script>
+      var options = {
+        chart: {
+          type: 'line',
+          height: 350
+        },
+        series: [{
+          name: 'AAPL',
+          data: []
+        }],
+        xaxis: {
+          type: 'datetime'
+        }
+      }
+
+      var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+      function updateChart() {
+        fetch('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=1min&apikey=YOUR_API_KEY')
+        .then(response => response.json())
+        .then(data => {
+          var seriesData = [];
+
+          for (var timestamp in data['Time Series (1min)']) {
+            seriesData.push({
+              x: new Date(timestamp),
+              y: parseFloat(data['Time Series (1min)'][timestamp]['4. close'])
+            });
+          }
+
+          chart.updateSeries([{
+            name: 'AAPL',
+            data: seriesData
+          }]);
+        });
+      }
+
+      updateChart();
+      setInterval(updateChart, 60000);
+      chart.render();
+
+      // Function to redirect to asinko.com when the button is clicked
+      function invest() {
+        window.location.href = 'https://asinko.com';
+      }
+    </script>
+  </body>
+</html>

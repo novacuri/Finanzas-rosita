@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real-time stock quotes</title>
+  </head>
+  <body>
+    <ul id="quotes-list"></ul>
+    
+    <script>
+      const apiKey = 'YOUR_API_KEY';
+      const symbols = ['AAPL', 'GOOGL', 'MSFT', 'SPY'];
+      
+      const quotesList = document.getElementById('quotes-list');
+      
+      symbols.forEach(symbol => {
+        const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${apiKey}`;
+        
+        fetch(url)
+          .then(response => response.json())
+          .then(data => {
+            const quote = data['Global Quote'];
+            const price = quote['05. price'];
+            
+            const listItem = document.createElement('li');
+            const text = document.createTextNode(`${symbol} price: ${price}`);
+            listItem.appendChild(text);
+            quotesList.appendChild(listItem);
+          })
+          .catch(error => {
+            console.log(`Error fetching ${symbol} price: ${error}`);
+          });
+      });
+    </script>
+  </body>
+</html>

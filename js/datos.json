@@ -1,90 +1,90 @@
 [
 	{
 		"id": 1,
-		"pageName": "blanquea",
-		"category": "Estética",
+		"pageName": "pagina1",
+		"empresa": "Apple",
 		"thumbnails": "https://picsum.photos/300/200",
-		"title": "Blanqueamiento",
-		"description": "Tratamientos especializados para lograr una sonrisa radiante y sana.",
-		"price": 1000,
+		"text1": "Las mejores inversiones en Argentina",
+		"description": "Inversiones para no perderselas porque kdsjhkjadhfkjhawdf.",
+		"link": "Entra a https://www.inversiones.com",
 		"status": true,
-		"stock": 10
+		"text2": "Esta campaña esta dirigida a zzz"
 	},
 	{
 		"id": 2,
-		"pageName": "protcomp",
-		"category": "Prótesis",
+		"pageName": "pagina2",
+		"empresa": "Microsoft",
 		"thumbnails": "https://picsum.photos/300/200",
-		"title": "Prótesis Completa",
-		"description": "La solución completa a cada caso que se presenta para poder disfrutar de una masticación adecuada.",
-		"price": 2000,
+		"text1": "Las mejores inversiones en Nigeria",
+		"description": "La solución completa a para tus problemas de fhgjshfjshgfkhefkjhefkhef.",
+		"link": "Entra a https://www.investmentgrade.com",
 		"status": true,
-		"stock": 10
+		"text2": "Esta campaña esta dirigida a eee"
 	},
 	{
 		"id": 3,
-		"pageName": "protflex",
-		"category": "Prótesis",
+		"pageName": "pagina3",
+		"empresa": "Tesla",
 		"thumbnails": "https://picsum.photos/300/200",
-		"title": "Prótesis Flexible",
-		"description": "La solución flexible a cada caso que se presenta para poder disfrutar de una masticación adecuada.",
-		"price": 3000,
+		"text1": "Las mejores inversiones en Portugal",
+		"description": "La solución flexible a cada caso que se presenta para poder disfrutar de erlfjgserhkjsehrgkj.",
+		"link": "Entra a https://www.bikeword.com",
 		"status": true,
-		"stock": 10
+		"text2": "Esta campaña esta dirigida a rrr"
 	},
 	{
 		"id": 4,
-		"pageName": "protcrco",
-		"category": "Prótesis",
+		"pageName": "pagina4",
+		"empresa": "Google",
 		"thumbnails": "https://picsum.photos/300/200",
-		"title": "Prótesis Cromo-Cobalto",
-		"description": "La solución en Cromo-Cobalto a cada caso que se presenta para poder disfrutar de una masticación adecuada.",
-		"price": 4000,
+		"text1": "Las mejores inversiones en India",
+		"description": "La solución optima que se presenta para poder disfrutar de wkfhekjwfekjh.",
+		"link": "Entra a https://www.info.com",
 		"status": true,
-		"stock": 10
+		"text2": "Esta campaña esta dirigida a yyy"
 	},
 	{
 		"id": 5,
-		"pageName": "ortbraqt",
-		"category": "Estética",
+		"pageName": "pagina5",
+		"empresa": "Ford",
 		"thumbnails": "https://picsum.photos/300/200",
-		"title": "Ortodoncia convencional (braquets)",
-		"description": "La ortodoncia es una rama de la odontología que estudia, previene y corrige anomalías de posición tanto óseas como dentales.",
-		"price": 5000,
+		"text1": "Las mejores inversiones en Uruguay",
+		"description": "Estadisticamente probado como el retorno sobre inversion mas kjhwdkfjhwkjfdhqkwjfh",
+		"link": "Entra a https://www.getnowit.com",
 		"status": true,
-		"stock": 10
+		"text2": "Esta campaña esta dirigida a aaa"
 	},
 	{
 		"id": 6,
-		"pageName": "implycor",
-		"category": "Rehabilitación",
+		"pageName": "pagina6",
+		"empresa": "Chevrolet",
 		"thumbnails": "https://picsum.photos/300/200",
-		"title": "Implante y Corona",
-		"description": "La solución en implantes y coronas a cada caso que se presenta para poder disfrutar de una masticación adecuada.",
-		"price": 6000,
+		"text1": "Las mejores inversiones en Francia",
+		"description": "Eficiencia volcada al campo del retorno de jkwhfdejkhawdkfh.",
+		"link": "Entra a https://www.refrescos.com",
 		"status": true,
-		"stock": 10
+		"text2": "Esta campaña esta dirigida a mmm"
 	},
 	{
 		"id": 7,
-		"pageName": "placamre",
-		"category": "Rehabilitación",
+		"pageName": "pagina7",
+		"empresa": "Amazon",
 		"thumbnails": "https://picsum.photos/300/200",
-		"title": "Placa Miorelajante",
-		"description": "La solución en tratamientos activos de eliminación de los efectos del bruxismo.",
-		"price": 7000,
+		"text1": "Las mejores inversiones en Finlandia",
+		"description": "La solución en especialemente pensada para inversores que ldffjlkjflkjdf.",
+		"link": "Entra a https://www.chimichirri.com",
 		"status": true,
-		"stock": 10
+		"text2": "Esta campaña esta dirigida a ggg"
 	},
 	{
 		"id": 8,
-		"pageName": "POLAQUENNNNN",
-		"category": "Rehabilitación",
+		"pageName": "pagina8",
+		"empresa": "Coke",
 		"thumbnails": "https://picsum.photos/300/200",
-		"title": "Esta página está de la hostia",
-		"description": "Show me the money",
-		"price": 7000,
+		"text1": "Las mejores inversiones en USA",
+		"description": "Desde USA para el mundo, sabe cuales son los mejores qkejhfkehrgkjhwergkjh",
+		"link": "Entra a https://www.google.com",
 		"status": true,
-		"stock": 10
+		"text2": "Esta campaña esta dirigida a eee"
 	}
 ]
