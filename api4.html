@@ -33,3 +33,15 @@
     </script>
   </body>
 </html>
+
+<!-- DESDE ACA SCRIPT PARA QUE REFRESQUE SOLAMENTE ESTA PARTE DE LA PAGINA CADA X MINUTOS -->
+
+<script>
+  // Función que actualiza el contenido de la sección cada 60 segundos
+  setInterval(function(){
+    var seccion = document.getElementById('quotes-list'); /* ACA LEVANTA EL ID DEL DOCUMENTO Y LO REFRESCA URIEL */
+    seccion.innerHTML = '<ul id="quotes-list"></ul>';
+  }, 60000); // 60000 milisegundos = 60 segundos
+</script>
+
+
